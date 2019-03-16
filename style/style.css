@@ -315,11 +315,15 @@ h2{
     text-align: center;
 }
 
+.b7 p{
+    margin-bottom: 24px;
+}
+
 .b7-block{
-    padding: 16px;
     border-radius: 4px;
     box-shadow: 1px 1px 6px rgba(0,0,0,.1);
     height: 100%;
+    margin-bottom: 30px;
 }
 
 .b7-block-one-text{
@@ -330,4 +334,38 @@ h2{
 .heading-text-one p{
     line-height: 24px;
     margin-bottom: 24px;
+}
+
+.vid-thumb{
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.play-trigger svg{
+    fill: rgba(255,255,255,.9);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.anz-logo img{
+    margin-top: 11px;
+    margin-bottom: 26px;
+}
+
+.play-trigger-2{
+    display: inline-flex;
+    text-decoration: none;
+}
+.play-trigger-2 svg{
+    margin-right: 8px;
+    fill: #0052CC;
+}
+
+.link-text{
+    text-decoration: none;
+    color: #0052CC
 }
