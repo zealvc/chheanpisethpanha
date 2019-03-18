@@ -2,7 +2,10 @@
 *{
     margin: 0;
 }
-
+html,body
+{
+    overflow-x: hidden; 
+}
 element{
     --main-color: #091E42;
     --text-dec-color: rgb(0, 82, 204);
@@ -14,6 +17,7 @@ body{
     font-size: 16px;
     height: 100%;
     min-height: 100%;
+    width: 100%;
     font-family: Merriweather sans;
     font-style: normal;
     color: rgb(9, 30, 66);
@@ -65,16 +69,11 @@ header{
     cursor: pointer;
     display: inline-block;
     height: 28px;
-    position: absolute;
+    position: absolute; 
     right: 20px;
     top: 14px;
     width: 28px;
     z-index: 10;
-}
-
-/* main test height */
-main{
-    height: 8945.380px;
 }
 
 /* section block 1 */
@@ -367,5 +366,164 @@ h2{
 
 .link-text{
     text-decoration: none;
-    color: #0052CC
+    color: #0052CC;
+}
+
+.cancer-research-logo img{
+    margin: 0 0 16px 0;
+}
+
+.learn-more-link{
+    padding: 8px 0 64px 0;
+}
+
+.learn-more-link a{
+    text-align: center;
+    display: block;
+}
+
+/* section 8 block */
+
+.b8{
+    padding: 16px 0;
+    position: relative;
+}
+.row.reduced-row {
+    max-width: 1200px;
+}
+
+.row {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.box-background{
+    background-color: #F4F5F7;
+    padding: 40px;
+}
+.grey-box-1, .grey-box-2{
+    position: relative;
+    padding: 16px;
+}
+.box-link-1{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.box-image{
+    text-align: center;
+    padding: 16px;
+}
+
+.box-desc{
+    padding: 16px;
+}
+
+/* section 9 block */
+.b9{
+    padding: 16px 0 64px 0;
+}
+
+.b9-head{
+    padding: 16px 16px 32px 16px;
+    text-align: center;
+}
+
+.head-text p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.b9-body{
+padding: 16px;
+}
+
+.b9-body ::before{
+    content: " ";
+    display: table;
+}
+
+.image-left{
+    float: left;
+    margin-right: 16px;
+}
+
+.text-right{
+    margin-left: 16px;
+    padding-left: 40px;
+}
+
+.text-right h3{
+    margin-bottom: 14px;
+}
+
+.text-right p{
+    margin-bottom: 24px;
+}
+
+.text-right p a{
+    color: #0052CC;
+    text-decoration: none;
+}
+
+/* footer */
+.footer-content{
+    padding-top: 16px;
+    background-color: #F4F5F7;
+    position: relative;
+}
+.links-row{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column{
+    padding: 16px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+
+.logo{
+
+}
+
+.columns {
+    position: relative;
+}
+
+.link-button{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.link-ref{
+    margin: 0 0 8px 0;
+    text-decoration: none;
+    color: var(--text-color);
+    line-height: 15.75px;
+    font-size: .875rem;
+}
+
+.col-heading h3{
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 700px;
+}
+
+.footer-view-all{
+    margin-top: 12px;
+}
+
+.footer-view-all a{
+    color: #0052CC;
+    text-decoration: none;
+    font-size: 14px;
 }
