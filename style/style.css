@@ -475,29 +475,30 @@ padding: 16px;
 .footer-content{
     padding-top: 16px;
     background-color: #F4F5F7;
-    position: relative;
 }
-.links-row{
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.column{
+
+.footer-links {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .row {
+    display: table-row;
+  }
+  .cell {
+    display: table-cell;
     padding: 16px;
-    position: relative;
-    min-height: 1px;
     padding-left: 16px;
     padding-right: 16px;
-    width: 100%;
-}
+    width: 50%;
+  }
+  .column1 {
+    display: table-column;
+  }
+  .column2 {
+    display: table-column;
+  }
 
-.logo{
-
-}
-
-.columns {
-    position: relative;
-}
 
 .link-button{
     display: block;
@@ -527,3 +528,78 @@ padding: 16px;
     text-decoration: none;
     font-size: 14px;
 }
+
+.language-selector{
+    position: relative;
+    padding: 10px 0 10px 0;
+}
+
+.language-selector img{
+    height: 20px;
+    width: 20px;
+    left: -26px;
+    top: 50%;
+    text-align: left;
+    float: left;
+    fill: var(--main-color);
+}
+
+.language-selector form{
+    opacity: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.copyright{
+  width: 100%;
+}
+.copyright-links{
+    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    border-top: 1px solid #DFE1E5;
+    
+  }
+
+ul{
+      display: inline-block;
+      list-style: none;
+      padding-left: 0px;
+}
+li{
+    display: inline;
+}
+.social{
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.fb{
+    background-image: url(img/facebook-logo-button.svg);
+    width:24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.twt{
+    background-image: url(img/twitter-logo-button.svg);
+    width:24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.in{
+    background-image: url(img/linkedin-button.svg);
+    width:24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.yt{
+    background-image: url(img/youtube-logotype.svg);
+    width:24px;
+    height: 24px;
+    background-size: contain;
+}
+
