@@ -1,5 +1,5 @@
 /* global style */
-@media only screen and (min-width:110px) and (max-width:767px) {
+@media only screen and (min-width:110px) and (max-width: 664px) {
 *{
     margin: 0;
 }
@@ -132,6 +132,7 @@ h1{
     margin-right: auto;
 }
 .button-b2{
+    float: left;
     border-color : rgb(0, 82, 204);
     color: rgb(0, 82, 204);
     text-decoration: none;
@@ -141,9 +142,12 @@ h1{
     line-height: 28px;
 
 }
-
+.b2-text{
+    float: left;
+}
 .b2-text p{
     font-size: 14px;
+
 }
 
 /* section block 3 */
@@ -604,5 +608,9 @@ li{
     width:24px;
     height: 24px;
     background-size: contain;
+}
+/* responsive for all screen size */
+@media (min-width:1281px){
+
 }
 }
