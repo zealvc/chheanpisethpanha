@@ -1,5 +1,5 @@
 /* global style */
-@media only screen and (min-width:110px) and (max-width: 664px) {
+@media only screen and (min-width:110px) and (max-width: 767px) {
 *{
     margin: 0;
 }
@@ -68,17 +68,15 @@ header{
     top: 14px;
 }
 .global-nav_toggle-button{
-    background-size: 28px;
-    cursor: pointer;
-    display: inline-block;
     height: 28px;
     position: absolute; 
     right: 20px;
     top: 14px;
     width: 28px;
-    z-index: 10;
 }
-
+.buttons, .profile{
+    display: none;
+}
 /* section block 1 */
 .b1{
     height: 475px;
@@ -315,6 +313,12 @@ h2{
     margin-left: auto;
     display: inline-block;
 }
+.mobile-img{
+    display: inline;
+}
+.desktop-img{
+    display: none;
+}
 
 /* section 7 block */
 .b7{
@@ -330,6 +334,7 @@ h2{
     box-shadow: 1px 1px 6px rgba(0,0,0,.1);
     height: 100%;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .b7-block-one-text{
@@ -608,9 +613,5 @@ li{
     width:24px;
     height: 24px;
     background-size: contain;
-}
-/* responsive for all screen size */
-@media (min-width:1281px){
-
 }
 }
