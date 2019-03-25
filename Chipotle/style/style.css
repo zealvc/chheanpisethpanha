@@ -1,0 +1,169 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;  
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+}
+a{
+    text-decoration: none;   
+}
+p{
+    color: #451400;
+    font-size: 13px;
+}
+
+.nav-bar{
+    display: block;
+    background-color: #fff;
+    border-bottom: .85px solid #d4cbc7;
+    height: 60px;
+    padding: 0 8px;
+}
+.nav-bar--right, .nav-bar--left{
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+.nav-bar--left{
+    float: left;
+}
+.primary-logo{
+    height: 50px;
+    margin-left: 12px;
+}
+.nav-bar--right{
+    float: right;
+}
+.nbr--round-box a{
+    background-color: rgb(69, 20, 0);
+    border-radius: 30px;
+    height: 36px;
+    color: #fff;
+    min-width: 165px;
+    padding:0 10px 0 5px;
+    display: inline-flex;
+    align-items: center;
+}
+.nbr--round-box img{
+    height: 26px;
+}
+.c-icon{
+    margin: 0 15px 0 0;
+    position: relative;
+    display: flex;
+}
+.c-icon::after{
+    background-color: #fff;
+    content: "";
+    height: 20px;
+    position: absolute;
+    width: 1px;
+    margin: 3px 0 0px 28px;
+}
+/* block hero */
+.block-hero{
+    padding: 0 0 64px 0;
+}
+.bh--hero-img img{
+    width: 100%;
+}
+.bh-b--buttons{
+    display: flex;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+.bh-b--earning, .bh-b--order{
+    color: #fff;
+    display: block;
+    height: 58px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 19px 21px;
+    text-align: center;
+    width: 50%;
+}
+.bh-b--earning{
+    background-color: rgb(173, 33, 24);
+}
+.bh-b--earning a{
+    color: #fff;
+    align-items: center;
+}
+.bh-b--order{
+    background-color: #88120a;
+    text-transform: uppercase;
+}
+/* block recommend */
+.br--background{
+    background-image: url(img/background-image-what-should-i-eat@3x_cropped.png);
+    background-repeat: repeat;
+    height: 147px;
+}
+.br--wsie{
+    padding: 36px 15px;
+    display: inline-block;
+}
+.br--wsie p{
+    display: inline-block;
+    color: #451400;
+    line-height: .94;
+    font: bold 24px Arial,sans-serif; 
+}
+.br--wsie--select-box{
+    display: flex;
+}
+.c-what-should-I-eat__select{
+    color: #b68207;
+    border-bottom: 1px solid #451400;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 88%;
+    font: bold 1.5rem Arial,sans-serif;
+    text-transform: uppercase;
+}
+/* block food showcase */
+.bfs--container{
+    padding: 0 15px;
+    height: auto;
+}
+.bfs-c--img img{
+    width: 100%;
+}
+.bfs-c--text-img{
+    margin: 15px;
+    border: 1px solid rgb(212, 203, 199); 
+}
+.c-text--desc{
+    padding: 20px;
+}
+.c-text--desc h1{
+    display: inline-block;
+    color: #451400;
+    line-height: .94;
+    font: bold 24px Arial,sans-serif; 
+    margin-bottom: 16px;
+}
+.c-text--desc p{
+    margin-bottom: 16px;
+}
+.c-text--button{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+.c-t-b-order{
+    width: 100%;
+    background-color: #451400;
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    font-weight: 700;
+}
+
+.brl--img img{
+    height: 204px;
+}
