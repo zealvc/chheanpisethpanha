@@ -74,15 +74,21 @@ section{
 /* block hero */
 .block-hero{
     padding: 0 0 64px 0;
-}
+}}
 .bh--hero-img img{
     margin-top: 70px;
     width: 100%;
+}
+.bh--hero-img-desk{
+    display: none;
 }
 .bh-b--buttons{
     display: flex;
     padding: 0 15px;
     margin-top: 10px;
+}
+.desk{
+    display: none !important;
 }
 .bh-b--earning, .bh-b--order{
     color: #fff;
@@ -336,4 +342,106 @@ h3{
 }
 .fl--div{
     margin-bottom: 12px;
+}
+/* responsive ipad pro */
+@media only screen and (min-width: 1024px){
+    /* navbar */
+    .nav-bar{
+        height: 100px;
+        padding: 0 8px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+    }
+    .nav-bar--left, .nav-bar--mid, .nav-bar--right{
+        /* flex-grow: 1; */
+    }
+    .nav-bar--right{
+        display: inline-flex;
+    }
+    .nav-bar--left span{
+        display: none;
+    }
+    .primary-logo{
+        width: 80px;
+        height: 80px;
+    }
+    .nav-bar--mid{
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        flex-grow: 1;
+    }
+    .nbm--links{
+        font-weight: 700;
+        line-height: 1;
+        color: #451400;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin: 15px 10px;
+        width: auto;
+
+    }
+    .bh--hero-img{
+        display: none;
+    }
+    .container{
+        padding:0 47px;
+        display: flex;
+        justify-content: center;
+    }
+    .bh--hero-img-desk{
+        display: block;
+        height: 390px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .bh--hero-img-desk img{
+        object-fit: cover;
+        width: 100%;
+        height: 490px;
+    }
+    .bh-b--buttons{
+        align-items: center;
+    }
+    .bh-b--buttons a{
+        font-size: 24px;
+    }
+    .bh-b--earning{
+        display: none;
+    }
+    .desk{
+        display: block !important;
+        width: auto;
+    }
+    .bh-b--order{
+        width: auto;
+    }
+    /* block recommend */
+    .br--background{
+        height: 219px;
+    }
+    /* .br--container{
+        width: 100%;
+        text-align: center;
+        align-self: center;
+    } */
+    .br--wsie{
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        padding: 85px 15px 83px 15px;     
+    }
+    .br--wsie p{
+        font-size: 48px;
+        text-align: center;
+    }
+    .br--wsie--select-box{
+        display: inline-flex;
+    }
+    .c-what-should-I-eat__select{
+        width: auto;
+    }
 }
