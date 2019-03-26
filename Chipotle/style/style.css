@@ -132,6 +132,9 @@ section{
 .bfs--container{
     height: auto;
 }
+.bfs--card{
+    margin-bottom: 30px;
+}
 .bfs-c--img img{
     width: 100%;
     height: 155px;
@@ -209,4 +212,84 @@ section{
     transform: translate(-50%, -50%);
     position: absolute;
     font-weight: 700;
+}
+/* block finder */
+.block-finder{
+    background-color: #786259;
+}
+.bf--container{
+    padding: 16px 0;
+}
+.bf--text{
+    color: #fff;
+    display: block;
+    font: bold .8125rem Arial,sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+.bf--search{
+    display: inline-block;
+    margin-top: 8px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+.bf--search input{
+    border-color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    height: 28px;
+    outline: 0;
+    padding-left: 0;
+    padding-right: 30px;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    display: block;
+}
+.bf--search label{
+    color: #fff;
+    font-size: 18px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 200ms;
+}
+.bf-s-icon{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+/* block nav footer */
+.block-nav-footer{
+    background-color: #1b0800;
+    color: #fff;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+.bnf--container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bnf--links{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    color: #fff;
+    font-stretch: condensed;
+}
+.sub-header{
+    margin: 24px 0 16px 0;
+    padding-bottom: 8;
 }
