@@ -14,7 +14,9 @@ p{
     color: #451400;
     font-size: 13px;
 }
-
+section{
+    padding: 0 15px;
+}
 .nav-bar{
     display: block;
     background-color: #fff;
@@ -101,6 +103,7 @@ p{
     background-image: url(img/background-image-what-should-i-eat@3x_cropped.png);
     background-repeat: repeat;
     height: 147px;
+    padding: 0;
 }
 .br--wsie{
     padding: 36px 15px;
@@ -127,15 +130,17 @@ p{
 }
 /* block food showcase */
 .bfs--container{
-    padding: 0 15px;
     height: auto;
 }
 .bfs-c--img img{
     width: 100%;
+    height: 155px;
+    object-fit: cover;
 }
 .bfs-c--text-img{
     margin: 15px;
     border: 1px solid rgb(212, 203, 199); 
+    position: relative;
 }
 .c-text--desc{
     padding: 20px;
@@ -166,4 +171,42 @@ p{
 
 .brl--img img{
     height: 204px;
+}
+/* block real */
+.block-real{
+    text-align: center;
+    padding: 0 !important;
+}
+.brl--text p{
+    font-size: 16px;
+    width: 100%;
+    margin: 20px 0;
+}
+.brl--button{
+    padding: 20px 20px 32px;
+}
+.brl-b--check{
+    color: #451400;
+    display: block;
+    border: 2px solid #1b0800;
+    font-size: 18px;
+    padding: .7rem 30px;
+}
+.img-bg{
+    background: #000;
+}
+.group-img{
+    height: 188px !important;
+    opacity: .60;
+}
+.img-title p{
+    color: #fff;
+    font-size: 36px;
+    left: 68%;
+    top: 25%;
+    width: 100%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-weight: 700;
 }
