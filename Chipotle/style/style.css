@@ -35,6 +35,9 @@ section{
     align-items: center;
     display: flex;
 }
+.nav-bar--mid{
+    display: none;
+}
 .nav-bar--left{
     float: left;
 }
@@ -74,10 +77,12 @@ section{
 /* block hero */
 .block-hero{
     padding: 0 0 64px 0;
-}}
+    height: auto;
+}
 .bh--hero-img img{
     margin-top: 70px;
     width: 100%;
+    align-items: center;
 }
 .bh--hero-img-desk{
     display: none;
@@ -121,6 +126,9 @@ section{
 .br--wsie{
     padding: 36px 15px;
     display: inline-block;
+    width: 100%;
+    align-self: center;
+    text-align: left;
 }
 .br--wsie p{
     display: inline-block;
@@ -210,20 +218,24 @@ section{
 }
 .img-bg{
     background: #000;
+    position: relative;
 }
 .group-img{
     height: 188px !important;
     opacity: .60;
 }
+.img-title{
+left: 50%;
+top: 50%;
+width: 100%;
+z-index: 2;
+transform: translate(-50%, -50%);
+position: absolute;
+text-align: center;
+}
 .img-title p{
     color: #fff;
     font-size: 36px;
-    left: 68%;
-    top: 25%;
-    width: 100%;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-    position: absolute;
     font-weight: 700;
 }
 /* block finder */
@@ -232,6 +244,9 @@ section{
 }
 .bf--container{
     padding: 16px 0;
+}
+.bf--icon{
+    display: none;
 }
 .bf--text{
     color: #fff;
@@ -244,10 +259,11 @@ section{
 }
 .bf--search{
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 16px;
     position: relative;
     vertical-align: middle;
     width: 100%;
+    align-items: center;
 }
 .bf--search input{
     border-color: #fff;
@@ -306,6 +322,7 @@ h3{
     flex-basis: 100%;
     color: #fff;
     font-stretch: condensed;
+    width: auto;
 }
 .sub-header{
     margin: 24px 0 16px 0;
@@ -345,16 +362,19 @@ h3{
 }
 /* responsive ipad pro */
 @media only screen and (min-width: 1024px){
+    section{
+        padding: 0 35px;
+    }
+    p{
+        font-size: 16px;
+    }
     /* navbar */
     .nav-bar{
         height: 100px;
         padding: 0 8px;
-        position: relative;
+        position: fixed;
         margin: 0 auto;
         display: flex;
-    }
-    .nav-bar--left, .nav-bar--mid, .nav-bar--right{
-        /* flex-grow: 1; */
     }
     .nav-bar--right{
         display: inline-flex;
@@ -371,16 +391,15 @@ h3{
         align-items: center;
         align-self: center;
         flex-grow: 1;
+        display: inline;
     }
     .nbm--links{
         font-weight: 700;
         line-height: 1;
         color: #451400;
         text-transform: uppercase;
-        font-size: 1.5rem;
         margin: 15px 10px;
         width: auto;
-
     }
     .bh--hero-img{
         display: none;
@@ -392,16 +411,13 @@ h3{
     }
     .bh--hero-img-desk{
         display: block;
-        height: 390px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         width: 100%;
+        height: 545px;
     }
     .bh--hero-img-desk img{
         object-fit: cover;
         width: 100%;
-        height: 490px;
+        height: 679px; 
     }
     .bh-b--buttons{
         align-items: center;
@@ -423,11 +439,6 @@ h3{
     .br--background{
         height: 219px;
     }
-    /* .br--container{
-        width: 100%;
-        text-align: center;
-        align-self: center;
-    } */
     .br--wsie{
         width: 100%;
         align-self: center;
@@ -443,5 +454,149 @@ h3{
     }
     .c-what-should-I-eat__select{
         width: auto;
+    }
+    .bfs--container{
+        display: flex;
+    }
+    .bfs-c--text-img{   
+        flex-direction: row-reverse;
+        display: flex;
+        height: 420px;
+    }
+    .bfs-c--img, .bfs-c--text{
+        width: 50%;
+    }
+    .bfs-c--text{
+        word-break: break-word;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .bfs-c--img img{
+        height: 100%;
+    }
+    .c-t-b-order{
+        margin-top: 75px;
+        display: inline-block;  
+    }
+    .brl--img img{
+        max-height: 424px;
+        height: auto;
+    }
+    .brl--title h1{
+        font-size: 90px;
+        color:#451400;
+    }
+    .brl-b--check{
+        width: auto;
+        display: inline-block;
+    }
+    .block-card-info{
+        display: flex;
+    }
+    .bci--cards{
+        flex-direction: column;    
+        display: flex;
+        height: 420px;
+    }
+    .bci--box{
+        width: 100%;
+    }
+    .bf--container{
+        display: flex;
+    }
+    .bf--icon{
+        display: block;
+    }
+    .bf--icon img{
+        height: 60px;
+        width: 60px;
+    }
+    .bf--text{
+        display: flex;
+        font-size: 1rem;
+        letter-spacing: 3.4px;
+        padding-left: 22px;
+        padding-right: 32px;
+        align-items: center;
+    }
+    .bf--search{
+        width: auto;
+    }
+    .bnf--container{
+        display: inline-flex;
+        flex-wrap:nowrap;
+        width: auto;
+        position: relative;
+    }
+    .bnf--links{
+        margin: 0 84px 20px 0;  
+        flex-basis: auto;
+    }
+    .bnf--s--d{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+    .bnf-s-container{
+        display: flex;
+    }
+    .footer-links{
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .bnf-s-buttons, .bnf-s-downloads, .footer-links{
+        padding: 0 15px;
+    }
+    .footer-legals{
+        display: flex;  
+    }
+    .fl--div{
+        flex-basis: 100%;
+        align-items: center;
+        margin: 0;
+        display: flex;
+    }
+    .fl-l--link, .fl-l--sublinks{
+        font-size: 11px;
+    }
+    .legal-links{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .ll--link{
+       flex-basis: auto;
+       padding: 8px !important;
+    }
+}
+@media only screen and (min-width: 1274px){
+
+    .br--container{
+        display: flex;
+    }
+    .br--wsie{
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        padding: 85px 15px 83px 15px;    
+        justify-content: center;
+        display: flex;
+    }
+    .br--wsie p{
+        font-size: 48px;
+        text-align: center;
+    }
+    .c-what-should-I-eat__select {
+        font-size: 48px;
+        padding-left: 10px;
+    }
+    .bfs--container, .block-real, .block-card-info, .bf--container, .bnf--wrapper{
+        max-width: 1170px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
